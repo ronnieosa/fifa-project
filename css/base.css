@@ -1,0 +1,726 @@
+/*
+* @Author: ronnie
+* @Date:   2017-04-17
+* @Last Modified by:   ronnie
+* @Last Modified time:
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+body ul{
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+body p{
+    margin-bottom: 0;
+}
+body a{
+    text-decoration: none!important;
+}
+body em{
+    font-style: normal;
+}
+body input,textarea,select{
+    outline:0;
+}
+body button {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+/*----------------------------公共样式-----------------------------*/
+
+/**
+* bootstrap扩展
+*/
+.navbar-fifa {
+    background-color: #222;
+    border: none;
+    margin-bottom: 0;
+}
+.navbar-fifa .navbar-brand {
+    color: #9d9d9d;
+}
+.navbar-fifa .navbar-brand:hover,
+.navbar-fifa .navbar-brand:focus {
+    color: #fff;
+    background-color: transparent;
+}
+.navbar-fifa .navbar-text {
+    color: #9d9d9d;
+}
+.navbar-fifa .navbar-nav > li > a {
+    color: #f9d600;
+}
+.navbar-fifa .navbar-nav > li > a:hover,
+.navbar-fifa .navbar-nav > li > a:focus {
+    color: #333333;
+    background-color: #f9d600;
+}
+.navbar-fifa .navbar-nav > .active > a,
+.navbar-fifa .navbar-nav > .active > a:hover,
+.navbar-fifa .navbar-nav > .active > a:focus {
+    color: #333333!important;
+    background-color: #f9d600;
+}
+.navbar-fifa .navbar-nav > .disabled > a,
+.navbar-fifa .navbar-nav > .disabled > a:hover,
+.navbar-fifa .navbar-nav > .disabled > a:focus {
+    color: #444;
+    background-color: transparent;
+}
+.navbar-fifa .navbar-toggle {
+    border-color: #333;
+}
+.navbar-fifa .navbar-toggle:hover,
+.navbar-fifa .navbar-toggle:focus {
+    background-color: #333;
+}
+.navbar-fifa .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.navbar-fifa .navbar-collapse,
+.navbar-fifa .navbar-form {
+    border-color: #101010;
+}
+.navbar-fifa .navbar-nav > .open > a,
+.navbar-fifa .navbar-nav > .open > a:hover,
+.navbar-fifa .navbar-nav > .open > a:focus {
+    color: #fff;
+    background-color: #080808;
+}
+@media (max-width: 767px) {
+    .navbar-fifa .navbar-nav .open .dropdown-menu > .dropdown-header {
+        border-color: #080808;
+    }
+    .navbar-fifa .navbar-nav .open .dropdown-menu .divider {
+        background-color: #080808;
+    }
+    .navbar-fifa .navbar-nav .open .dropdown-menu > li > a {
+        color: #9d9d9d;
+    }
+    .navbar-fifa .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-fifa .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #fff;
+        background-color: transparent;
+    }
+    .navbar-fifa .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-fifa .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-fifa .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #fff;
+        background-color: #080808;
+    }
+    .navbar-fifa .navbar-nav .open .dropdown-menu > .disabled > a,
+    .navbar-fifa .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .navbar-fifa .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #444;
+        background-color: transparent;
+    }
+}
+.navbar-fifa .navbar-link {
+    color: #9d9d9d;
+}
+.navbar-fifa .navbar-link:hover {
+    color: #fff;
+}
+.navbar-fifa .btn-link {
+    color: #9d9d9d;
+}
+.navbar-fifa .btn-link:hover,
+.navbar-fifa .btn-link:focus {
+    color: #fff;
+}
+.navbar-fifa .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-fifa .btn-link:hover,
+.navbar-fifa .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-fifa .btn-link:focus {
+    color: #444;
+}
+.caret{
+    margin-left: 5px;
+}
+
+.btn-sub {
+    color: #333;
+    background-color: #c6c6c6;
+    border-color: #a4a4a4;
+    border-radius: 0;
+    padding: 3px 10px;
+    height: 27px;
+}
+.btn-sub:focus,
+.btn-sub.focus {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #8c8c8c;
+}
+.btn-sub:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+.btn-sub:active,
+.btn-sub.active,
+.open > .dropdown-toggle.btn-sub {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+.btn-sub:active:hover,
+.btn-sub.active:hover,
+.open > .dropdown-toggle.btn-sub:hover,
+.btn-sub:active:focus,
+.btn-sub.active:focus,
+.open > .dropdown-toggle.btn-sub:focus,
+.btn-sub:active.focus,
+.btn-sub.active.focus,
+.open > .dropdown-toggle.btn-sub.focus {
+    color: #333;
+    background-color: #d4d4d4;
+    border-color: #8c8c8c;
+}
+.btn-sub:active,
+.btn-sub.active,
+.open > .dropdown-toggle.btn-sub {
+    background-image: none;
+}
+.btn-sub.disabled:hover,
+.btn-sub[disabled]:hover,
+fieldset[disabled] .btn-sub:hover,
+.btn-sub.disabled:focus,
+.btn-sub[disabled]:focus,
+fieldset[disabled] .btn-sub:focus,
+.btn-sub.disabled.focus,
+.btn-sub[disabled].focus,
+fieldset[disabled] .btn-sub.focus {
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn-sub .badge {
+    color: #fff;
+    background-color: #333;
+}
+
+.btn-check {
+    color: #fffefe;
+    background-color: #f25f06;
+    border-color: #f25f06;
+    padding: 7px 50px;
+    font-size: 20px;
+}
+.btn-check:focus,
+.btn-check.focus {
+    color: #fffefe;
+    background-color: #ef4a05!important;
+    border-color: #ef4a05;
+}
+.btn-check:hover {
+    color: #fffefe;
+    background-color: #ef4a05!important;
+    border-color: #ef4a05;
+}
+.btn-check:active,
+.btn-check.active,
+.open > .dropdown-toggle.btn-check {
+    color: #fffefe;
+    background-color: #ef4a05!important;
+    border-color: #ef4a05;
+}
+.btn-check:active:hover,
+.btn-check.active:hover,
+.open > .dropdown-toggle.btn-check:hover,
+.btn-check:active:focus,
+.btn-check.active:focus,
+.open > .dropdown-toggle.btn-check:focus,
+.btn-check:active.focus,
+.btn-check.active.focus,
+.open > .dropdown-toggle.btn-check.focus {
+    color: #fffefe;
+    background-color: #ef4a05!important;
+    border-color: #ef4a05;
+}
+.btn-check:active,
+.btn-check.active,
+.open > .dropdown-toggle.btn-check {
+    background-image: none;
+}
+.btn-check.disabled:hover,
+.btn-check[disabled]:hover,
+fieldset[disabled] .btn-check:hover,
+.btn-check.disabled:focus,
+.btn-check[disabled]:focus,
+fieldset[disabled] .btn-check:focus,
+.btn-check.disabled.focus,
+.btn-check[disabled].focus,
+fieldset[disabled] .btn-check.focus {
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn-check .badge {
+    color: #fff;
+    background-color: #333;
+}
+
+
+/**
+* top_column区域
+*/
+#top_column{
+    height: 32px;
+    line-height: 32px;
+    background: #f7f7f7;
+}
+#top_column > .container > p{
+    font-size: 13px;
+    color:#333333;
+}
+#top_column > .container > ul > li .js-language-select {
+
+}
+#top_column > .container > ul > li .select2-container {
+    width: 115px;
+}
+/*去除默认边框*/
+#top_column > .container > ul > li .select2-container:focus {
+    outline: none!important;
+}
+#top_column > .container > ul > li .select2-container > .selection:focus {
+    outline: none!important;
+}
+#top_column > .container > ul > li .select2-container > .selection > .select2-selection:focus {
+    outline: none!important;
+}
+
+#top_column > .container > ul > li:nth-of-type(1) {
+    width: 75px;
+}
+.select2-dropdown {
+    background-color: #fff;
+    border: 1px solid #F2F2F2;
+    border-radius: 0;
+}
+.select2-results > .select2-results__options > .select2-results__option {
+    text-align: left;
+    padding-left: 7px;
+}
+.select2-container--default .select2-selection--single {
+    background-color: transparent;
+    border: none;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding-right: 8px;
+}
+.select2-container .select2-selection--single .select2-selection__rendered > span img{
+    padding-bottom: 2px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #333333 transparent transparent transparent;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    height: 0;
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -2px;
+    position: absolute;
+    top: 50%;
+    width: 0;
+}
+.select2-results__option{
+    text-align: center;
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #f7f7f7;
+    color: #333333;
+}
+.select2-container--default .select2-results__option[aria-selected=true] {
+    background-color: #f7f7f7;
+}
+/*nav区域*/
+.navbar {
+    border-radius: 0;
+}
+.navbar > .logo-brand {
+    background: #292929;
+    padding: 17px 0;
+    padding-bottom: 12px;
+}
+.navbar > .logo-brand a{
+    display: inline-block;
+}
+.navbar > .logo-nav {
+    background: #333333;
+}
+.navbar-collapse{
+    padding-left: 0;
+}
+.navbar ul > li > a {
+    padding-left: 19px;
+    padding-right: 19px;
+    font-size: 16px;
+}
+/*购物车li部分*/
+.navbar > .logo-nav .collapse > ul:nth-of-type(2) {
+    float: right;
+}
+.navbar > .logo-nav .collapse > ul:nth-of-type(2) > li{
+    width:200px;
+}
+.navbar > .logo-nav .collapse > ul:nth-of-type(2) > li > a{
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+}
+.navbar > .logo-nav .collapse > ul:nth-of-type(2) > li a:hover{
+    background: #f7f7f7;
+}
+
+.navbar > .logo-nav .collapse > ul:nth-of-type(2) > li > div.shopcar-li{
+    padding: 14px 0;
+    position: relative;
+    cursor: pointer;
+}
+.navbar > .logo-nav .collapse > ul:nth-of-type(2) > li > div.shopcar-li:hover{
+    background: #666666;
+    /*color:#333333;*/
+}
+.navbar > .logo-nav .collapse > ul:nth-of-type(2) > li > div.shopcar-li > div {
+    color: #f9d600;
+    font-size: 16px;
+}
+.navbar > .logo-nav .collapse > ul:nth-of-type(2) > li > div.shopcar-li b.caret{
+    transition: .5s transform;
+}
+.navbar > .logo-nav .collapse > ul:nth-of-type(2) > li > div.shopcar-li:hover b.caret{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+.car-icon{
+    display: inline-block;
+    margin-right: 8px;
+}
+.shop-count{
+    color:#f41a1a;
+}
+/*购物车*/
+.shopcar-thumbnail {
+    position: absolute;
+    right:-1px;
+    top:50px;
+    background: #fff;
+    width: 360px;
+    border: 1px solid #e6e6e6;
+    display: none;
+    z-index: 2;
+}
+.shopcar-thumbnail p.title {
+    font-size: 16px;
+    color:#666666;
+    margin-top: 18px;
+    padding-left: 13px;
+    margin-bottom: 20px;
+}
+.shopcar-thumbnail div.goods-list {
+    padding-left: 13px;
+}
+.shopcar-thumbnail div.goods-list ul li {
+    margin-bottom: 10px;
+}
+.shopcar-thumbnail div.goods-list ul li:hover {
+   background: #fff;
+}
+.shopcar-thumbnail div.goods-list ul li img{
+    float: left;
+}
+.shopcar-thumbnail div.goods-list ul li p{
+    float: left;
+    font-size: 14px;
+    color:#666666;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+.shopcar-thumbnail div.goods-list ul li p.money{
+    color:#333333;
+    margin-left: 40px;
+}
+.shopcar-thumbnail div.bottom {
+    padding: 8px 13px;
+    background: #f6f6f6;
+    line-height: 30px;
+}
+.shopcar-thumbnail > div.bottom  p {
+    font-size: 16px;
+    float: left;
+    color: #2f333e;
+}
+.shopcar-thumbnail > div.bottom > p span{
+    color: #333333;
+    font-weight: bold;
+}
+.shopcar-thumbnail > div.bottom .btn-thumb{
+    float: right;
+    font-size: 14px;
+    border: 1px solid #e6e6e6;
+    padding: 4px 20px;
+}
+
+
+/*2级导航部分*/
+.navbar ul > li.fifa-li{
+    position: relative;
+}
+.navbar ul > li:hover{
+    background: #f9d600;
+}
+.navbar ul > li.fifa-li > ul{
+    text-align: center;
+    width:100%;
+    position: absolute;
+    top:50px;
+    left:0;
+    display: none;
+    z-index: 2;
+}
+.navbar ul > li.fifa-li > ul >li{
+    display: block;
+    width:100%;
+    background: #292929;
+}
+.navbar ul > li.fifa-li > ul >li a{
+    display: block;
+    width:100%;
+    padding: 9px 20px;
+    font-size: 16px;
+    color: #f9d600;
+}
+.navbar ul > li.fifa-li > ul >li a:hover{
+    background: #333333;
+}
+.navbar > .logo-nav .collapse > ul > li > a  b.caret{
+    transition: .5s transform;
+}
+.navbar > .logo-nav .collapse > ul > li > a:hover  b.caret{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+/*导航菜单样式自定义*/
+.navbar-toggle {
+float: left;
+margin-left: 15px;
+}
+.shopping-mobile {
+float: right;
+display: inline-block;
+
+}
+.shopping-mobile > a{
+display: block;
+padding: 15px 15px;
+}
+@media screen and (min-width: 768px){
+    .shopping-mobile {
+        display: none;
+    }
+}
+/**
+* 移动端适配
+*/
+@media screen and (max-width: 992px){
+    .navbar > .logo-nav .collapse > ul:nth-of-type(2) {
+        padding-right: 15px;
+    }
+}
+@media screen and (max-width: 767px){
+    .navbar-collapse{
+        padding-right: 0;
+    }
+    .navbar ul > li.fifa-li > ul {
+        position: static;
+    }
+}
+
+/*footer区域*/
+footer {}
+footer #foot-top{
+    background: #f6f6f6;
+    padding-bottom: 50px;
+}
+footer #foot-top .container .row{
+    margin:0 ;
+    background: #fff;
+}
+footer #foot-top .container .row > div {
+    padding: 0 10px;
+}
+footer #foot-top .media {
+    /*padding-left: 15px;*/
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+footer #foot-top .media .media-left{
+    padding-right: 2px;
+}
+footer #foot-top .media .media-body{
+    padding-top: 8px;
+}
+footer #foot-top .media .media-body h4{
+    color:#2f333e;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+footer #foot-top .media .media-body p{
+    color:#666666;
+    font-size: 13px;
+}
+footer #foot-bottom{
+    background: #292929;
+    padding-top: 27px;
+}
+footer #foot-bottom ul{
+    float: left;
+    padding: 0 12px
+}
+footer #foot-bottom ul > li{
+    padding: 9px 0;
+    margin: 0 23px;
+}
+footer #foot-bottom ul:nth-of-type(1) > li {
+    margin-left: 0;
+}
+footer #foot-bottom ul:nth-last-of-type(2) > li {
+    margin-right: 0;
+}
+footer #foot-bottom ul:nth-last-of-type(1) > li {
+    margin-right: 0;
+
+}
+footer #foot-bottom ul:nth-last-of-type(1) > li.netlink{
+    margin-top: 4px;
+}
+footer #foot-bottom ul > li.headtitle h4{
+    color:#fff;
+    font-size: 14px;
+}
+footer #foot-bottom ul:nth-of-type(4) > li:nth-of-type(2) {
+    margin-top: 9px;
+}
+footer #foot-bottom ul > li > a{
+    font-size: 14px;
+    color:#999999;
+}
+footer #foot-bottom ul > li > p {
+    font-size: 14px;
+    color:#999999;
+}
+footer #foot-bottom ul > li.email-input{
+    padding: 5px 0;
+    position: relative;
+    padding-left: 10px;
+}
+footer #foot-bottom ul > li.email-input >span.all{
+    color: #cc0000;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+footer #foot-bottom ul > li.email-input input{
+    color: #999999;
+    height: 27px;
+    border: 1px solid #313131;
+    background: #262626;
+    padding: 7px;
+}
+footer #foot-bottom ul > li.brandli {
+    padding: 5px 0;
+}
+footer #foot-bottom ul > li > ul.brandul{
+    padding-left: 0;
+}
+footer #foot-bottom ul > li > ul.brandul li{
+    float: left;
+    display: block;
+    padding: 0;
+    margin-right: 10px;
+}
+footer #foot-bottom ul > li.netlink a{
+    display: inline-block;
+    margin-right: 5px;
+}
+footer #foot-bottom ul > li.netlink a:nth-of-type(2){
+    margin-right: 0;
+}
+footer #foot-bottom > .web-foot-ul {
+    padding-bottom: 35px;
+}
+footer #foot-bottom > .web-tail {
+    border-top: 1px solid #313131;
+    padding: 34px 0;
+}
+footer #foot-bottom > .web-tail p{
+    color:#999999;
+    font-size: 13px;
+}
+footer #foot-bottom > .web-tail p:nth-of-type(2){
+    margin-top: 16px;
+}
+@media screen and (max-width: 1200px){
+    footer #foot-bottom ul {
+        padding: 0 8px;
+    }
+}
+@media screen and (max-width: 992px){
+    footer #foot-bottom ul {
+        padding: 0 12px;
+    }
+    footer #foot-bottom ul:nth-of-type(1) > li {
+        margin-left: 23px;
+    }
+}
+@media screen and (max-width: 767px){
+    footer #foot-top .media {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    footer #foot-top {
+        padding-bottom: 30px;
+    }
+    footer #foot-bottom ul {
+        padding: 0 13px;
+    }
+    footer #foot-bottom ul:nth-of-type(1) > li {
+        margin-left: 23px;
+    }
+    footer #foot-bottom ul > li > ul.brandul li {
+        margin-bottom: 5px;
+    }
+    footer #foot-bottom ul > li.brandli {
+        padding: 0 0;
+    }
+}
+/**
+* 分级导航菜单样式区域
+*/
+
+.path-nav {
+    padding: 15px 0;
+}
+.path-nav ol{
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.path-nav ol > li + li:before {
+    padding: 0 8px;
+    color: #666666;
+    content: ">";
+}
+.path-nav ol > li{
+    font-size: 16px;
+    color: #666666;
+}
+.path-nav ol > li a{
+    font-size: 16px;
+    color: #666666;
+    cursor: pointer;
+}

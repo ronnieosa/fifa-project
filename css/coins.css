@@ -1,0 +1,382 @@
+/*
+* @Author: ronnie
+* @Date:   2017-06-02
+* @Last Modified by:   ronnie
+* @Last Modified time:
+*/
+
+
+/**
+* bootstrap扩展
+*/
+.btn-device {
+    color: #333;
+    background-color: #f6f6f6;
+    border-color: #e6e6e6;
+    padding: 6px 38px;
+}
+.btn-device:focus,
+.btn-device.focus {
+    color: #fff;
+    background-color: #ff9018;
+    border-color: #ff9018;
+}
+.btn-device:hover {
+    color: #fff;
+    background-color: #ff9018;
+    border-color: #ff9018;
+}
+.btn-device:active,
+.btn-device.active,
+.open > .dropdown-toggle.btn-device {
+    color: #fff;
+    background-color: #ff9018;
+    border-color: #ff9018;
+}
+.btn-device:active:hover,
+.btn-device.active:hover,
+.open > .dropdown-toggle.btn-device:hover,
+.btn-device:active:focus,
+.btn-device.active:focus,
+.open > .dropdown-toggle.btn-device:focus,
+.btn-device:active.focus,
+.btn-device.active.focus,
+.open > .dropdown-toggle.btn-device.focus {
+    color: #fff;
+    background-color: #ff9018;
+    border-color: #ff9018;
+}
+.btn-device:active,
+.btn-device.active,
+.open > .dropdown-toggle.btn-device {
+    background-image: none;
+}
+.btn-device.disabled:hover,
+.btn-device[disabled]:hover,
+fieldset[disabled] .btn-device:hover,
+.btn-device.disabled:focus,
+.btn-device[disabled]:focus,
+fieldset[disabled] .btn-device:focus,
+.btn-device.disabled.focus,
+.btn-device[disabled].focus,
+fieldset[disabled] .btn-device.focus {
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn-device .badge {
+    color: #fff;
+    background-color: #333;
+}
+
+.btn-command {
+    color: #fff;
+    background-color: #f6d300;
+    border:none;
+    padding: 8px 26px;
+    width: 140px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.btn-command:focus,
+.btn-command.focus {
+    color: #fff;
+    background-color: #f3c400;
+    border-color: #f3c400;
+}
+.btn-command:hover {
+    color: #fff;
+    background-color: #f3c400;
+    border-color: #f3c400;
+}
+.btn-command:active,
+.btn-command.active,
+.open > .dropdown-toggle.btn-command {
+    color: #fff;
+    background-color: #f3c400;
+    border-color: #f3c400;
+}
+.btn-command:active:hover,
+.btn-command.active:hover,
+.open > .dropdown-toggle.btn-command:hover,
+.btn-command:active:focus,
+.btn-command.active:focus,
+.open > .dropdown-toggle.btn-command:focus,
+.btn-command:active.focus,
+.btn-command.active.focus,
+.open > .dropdown-toggle.btn-command.focus {
+    color: #fff;
+    background-color: #f3c400;
+    border-color: #f3c400;
+}
+.btn-command:active,
+.btn-command.active,
+.open > .dropdown-toggle.btn-command {
+    background-image: none;
+}
+.btn-command.disabled:hover,
+.btn-command[disabled]:hover,
+fieldset[disabled] .btn-command:hover,
+.btn-command.disabled:focus,
+.btn-command[disabled]:focus,
+fieldset[disabled] .btn-command:focus,
+.btn-command.disabled.focus,
+.btn-command[disabled].focus,
+fieldset[disabled] .btn-command.focus {
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn-command .badge {
+    color: #fff;
+    background-color: #333;
+}
+
+/**
+* coins-detail区域
+*/
+
+#coins_content {
+    background: #f6f6f6;
+    padding-bottom: 30px;
+}
+.coins-detail {
+
+}
+.coins-detail .detail-content{
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    padding: 30px;
+}
+.coins-detail .detail-content > h3{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-bottom: 12px;
+}
+.device-list {
+    padding-top: 49px;
+}
+.device-list > li:first-of-type{
+    padding-bottom: 20px;
+}
+.device-list > li > i{
+    float:left;
+    width: 235px;
+    text-align: right;
+    padding-right: 23px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #2f333e;
+    line-height: 34px;
+}
+.device-list > li > ul{
+    float:left;
+}
+.device-list > li > ul > li{
+    float:left;
+    margin: 0 10px;
+}
+.device-list > li > ul > li:nth-of-type(1){
+    margin-left: 0;
+}
+@media screen and (max-width: 1200px){
+    .device-list > li > i {
+        width: 215px;
+    }
+    .device-list > li > ul > li {
+        margin: 0 5px;
+    }
+}
+@media screen and (max-width: 767px){
+    .coins-detail .detail-content {
+        padding: 15px;
+    }
+    .device-list {
+        padding-top: 20px;
+    }
+    .device-list > li > i {
+        float: none;
+        width: auto;
+        text-align: left;
+        padding-right: 0;
+    }
+    .device-list > li > ul > li {
+        margin: 5px;
+    }
+    .device-list > li > ul > li:nth-of-type(1) {
+        margin-left: 5px;
+    }
+}
+/**
+* amount-input区域
+*/
+.amount-input{
+    background: #f6f6f6;
+    padding: 18px 100px;
+    margin-top: 50px;
+}
+.amount-input ul > li {
+    float:left;
+    font-size: 16px;
+    color:#2f333e;
+    font-weight: bold;
+    height:40px;
+}
+.amount-input ul > li:nth-last-of-type(1){
+    float:right;
+}
+.amount-input ul > li:nth-of-type(1) label{
+    margin-bottom: 0;
+}
+.amount-input ul > li:nth-of-type(1) label span{
+    display: inline-block;
+    margin-right: 24px;
+}
+.amount-input ul > li:nth-of-type(1) label input{
+    width: 187px;
+    padding: 7px 10px;
+    font-weight: normal;
+    color: #666666;
+}
+.amount-input ul > li:nth-of-type(2) {
+    margin-left: 22px;
+    line-height: 40px;
+}
+.amount-input ul > li:nth-of-type(3) {
+    margin-left: 22px;
+    line-height: 40px;
+}
+.amount-input ul > li:nth-of-type(2) span{
+
+}
+.amount-input ul > li:nth-of-type(3) p span{
+    color:#fe1818;
+}
+@media screen and (max-width: 1200px){
+    .amount-input {
+        padding: 18px 50px;
+    }
+}
+@media screen and (max-width: 992px){
+    .amount-input {
+        padding: 18px 30px;
+    }
+    .amount-input ul > li {
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 767px){
+    .amount-input {
+        margin-top: 25px;
+        padding: 18px 20px;
+    }
+    .amount-input ul > li {
+        float: left;
+        height: auto;
+        margin-bottom: 5px;
+    }
+    .amount-input ul > li:nth-of-type(2) {
+        margin-left: 0;
+    }
+
+    .amount-input ul > li:nth-of-type(1) label span {
+        margin-right: 24px;
+        margin-bottom: 10px;
+    }
+}
+/**
+* amount-list区域
+*/
+
+.amount-list {
+    margin-top: 45px;
+}
+.amount-list > ul > li{
+    padding: 14px 100px;
+    color:#666666;
+}
+.amount-list > ul > li:nth-of-type(1) > .row > div{
+    font-weight: bold;
+    color: #333333;
+}
+.amount-list > ul > li + li{
+    font-size: 16px;
+    padding: 7px 100px;
+}
+.amount-list > ul > li + li .row > div{
+    height: 34px;
+}
+.amount-list > ul > li .row > div:nth-of-type(2){
+    text-align: center;
+}
+.amount-list > ul > li + li .row > div span{
+    line-height: 34px;
+}
+.amount-list > ul > li + li span.orig{
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+.amount-list > ul > li + li span.cheap{
+    color: #fe1818;
+}
+.amount-list > ul > li + li span.no-cheap{
+    text-decoration: none;
+}
+.btn-buy {
+    width: 104px;
+    padding: 6px 5px;
+}
+@media screen and (max-width: 992px){
+    .amount-list > ul > li + li {
+        padding: 7px 50px;
+    }
+}
+@media screen and (max-width: 767px){
+    .amount-list {
+        margin-top: 25px;
+    }
+    .amount-list > ul > li + li {
+        padding: 7px 30px;
+    }
+    .amount-list > ul > li .row > div:nth-of-type(2){
+        text-align: left;
+    }
+    .amount-list > ul > li .row > div:nth-of-type(1){
+        text-align: left;
+    }
+    .amount-list > ul > li {
+        padding: 14px 50px;
+        text-align: center;
+    }
+    .amount-list > ul > li:nth-of-type(1) .row > div:nth-of-type(2){
+        text-align: center;
+    }
+    .amount-list > ul > li:nth-of-type(1) .row > div:nth-of-type(1){
+        text-align: center;
+    }
+}
+/**
+* coins-sale区域
+*/
+
+.coins-sale {
+
+}
+.coins-sale .sale-content{
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    padding: 30px;
+    margin-top: 28px;
+}
+.coins-sale .sale-content > h4{
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0 ;
+    padding-bottom: 13px;
+}
+.coins-sale .sale-content > p{
+    font-size: 16px;
+    line-height: 27px;
+    color:#666666;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}

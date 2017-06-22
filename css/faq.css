@@ -1,0 +1,106 @@
+/*
+* @Author: ronnie
+* @Date:   2017-06-02
+* @Last Modified by:   ronnie
+* @Last Modified time:
+*/
+
+
+/**
+* bootstrap扩展
+*/
+
+
+/**
+* faq-detail区域
+*/
+#faq_content {
+    background: #f6f6f6;
+    padding-bottom: 30px;
+}
+.faq-detail {}
+.faq-detail .detail-content {
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    padding: 30px;
+}
+.faq-detail .detail-content > h3 {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 12px;
+}
+.faq-detail .detail-content > div.list-tabs {
+    padding-top: 30px;
+}
+.faq-detail .detail-content > div.list-tabs ul li {
+    border: 1px solid #e6e6e6;
+    padding-left: 12px;
+    padding-right: 40px;
+}
+.faq-detail .detail-content > div.list-tabs ul li + li {
+    border-top: none;
+}
+.faq-detail .detail-content > div.list-tabs ul li div.title{
+    height:48px;
+    line-height: 48px;
+    cursor: pointer;
+}
+.faq-detail .detail-content > div.list-tabs ul li div.title > p{
+    float: left;
+    font-size: 16px;
+    color: #333333;
+}
+.faq-detail .detail-content > div.list-tabs ul li div.title > span{
+    display: inline-block;
+    height: 48px;
+    width: 12px;
+    /*line-height: 48px;*/
+    float: right;
+}
+.down {
+    background: url(../img/down.png) no-repeat center center;
+}
+.top {
+    background: url(../img/top.png) no-repeat center center;
+}
+.faq-detail .detail-content > div.list-tabs ul li div.content{
+    display: none;
+}
+.faq-detail .detail-content > div.list-tabs ul li div.content > p{
+    color: #666666;
+    font-size: 14px;
+    line-height: 30px;
+    padding-left: 18px;
+}
+.live{
+    display: block!important;
+}
+@media screen and (max-width: 767px){
+    .faq-detail .detail-content {
+        padding: 15px;
+    }
+    .faq-detail .detail-content > div.list-tabs {
+        padding-top: 20px;
+    }
+    .faq-detail .detail-content > div.list-tabs ul li {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .faq-detail .detail-content > div.list-tabs ul li div.title {
+
+    }
+    .faq-detail .detail-content > div.list-tabs ul li div.title > p {
+        font-size: 15px;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+        width: 224px;
+    }
+    .faq-detail .detail-content > div.list-tabs ul li div.content > p {
+        font-size: 14px;
+        padding-left: 0;
+        line-height: 25px;
+    }
+
+}

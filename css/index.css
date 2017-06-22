@@ -1,0 +1,369 @@
+/*
+* @Author: ronnie
+* @Date:   2017-06-02
+* @Last Modified by:   ronnie
+* @Last Modified time:
+*/
+
+/*bootstrap扩展*/
+.btn-buy {
+    color: #fff;
+    background-color: #f9d600;
+    border:none;
+    border-radius: 0;
+    width:140px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.btn-buy:focus,
+.btn-buy.focus {
+    color: #fff;
+    background-color: #f3c400;
+    border-color: #f3c400;
+}
+.btn-buy:hover {
+    color: #fff;
+    background-color: #f3c400;
+    border-color: #f3c400;
+}
+.btn-buy:active,
+.btn-buy.active,
+.open > .dropdown-toggle.btn-buy {
+    color: #fff;
+    background-color: #f3c400;
+    border-color: #f3c400;
+}
+.btn-buy:active:hover,
+.btn-buy.active:hover,
+.open > .dropdown-toggle.btn-buy:hover,
+.btn-buy:active:focus,
+.btn-buy.active:focus,
+.open > .dropdown-toggle.btn-buy:focus,
+.btn-buy:active.focus,
+.btn-buy.active.focus,
+.open > .dropdown-toggle.btn-buy.focus {
+    color: #fff;
+    background-color: #f3c400;
+    border-color: #f3c400;
+}
+.btn-buy:active,
+.btn-buy.active,
+.open > .dropdown-toggle.btn-buy {
+    background-image: none;
+}
+.btn-buy.disabled:hover,
+.btn-buy[disabled]:hover,
+fieldset[disabled] .btn-buy:hover,
+.btn-buy.disabled:focus,
+.btn-buy[disabled]:focus,
+fieldset[disabled] .btn-buy:focus,
+.btn-buy.disabled.focus,
+.btn-buy[disabled].focus,
+fieldset[disabled] .btn-buy.focus {
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn-buy .badge {
+    color: #fff;
+    background-color: #333;
+}
+
+.col-xs-1-5,
+.col-sm-1-5,
+.col-md-1-5,
+.col-lg-1-5 {
+    position: relative;
+    min-height: 1px;
+    padding: 0 12px;
+}
+.col-xs-1-5 {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+    .col-sm-1-5 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-1-5 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-1-5 {
+        width: 20%;
+        float: left;
+    }
+}
+/**
+* 轮播图区域
+*/
+.carousel-inner .item img.imgSm {
+    display: none;
+}
+@media screen and (max-width: 415px){
+    .carousel-inner .item img.imgSm {
+        display: block;
+    }
+    .carousel-inner .item img.imgBg {
+        display: none;
+    }
+}
+/*.carousel-inner {*/
+/*height: 460px;*/
+/*}*/
+/*.carousel-inner > div {*/
+/*height: 460px;*/
+/*background: url(../img/carousel-img.png) no-repeat center center;*/
+/*-moz-background-size: cover;*/
+/*-webkit-background-size: cover;*/
+/*background-size: cover;*/
+/*}*/
+/*.carousel-inner > div > a{*/
+/*display: block;*/
+/*height: 100%;*/
+/*width: 100%;*/
+/*}*/
+/*@media screen and (max-width: 992px){*/
+/*.carousel-inner > div {*/
+/*height: 350px;*/
+/*background: url(../img/carousel-img.png) no-repeat center center;*/
+/*-moz-background-size: cover;*/
+/*-webkit-background-size: cover;*/
+/*background-size: cover;*/
+/*}*/
+/*}*/
+/*@media screen and (max-width: 767px){*/
+/*.carousel-inner > div {*/
+/*height: 220px;*/
+/*background: url(../img/carousel-img.png) no-repeat center center;*/
+/*-moz-background-size: cover;*/
+/*-webkit-background-size: cover;*/
+/*background-size: cover;*/
+/*}*/
+/*}*/
+
+/**
+* classify区域
+*/
+#service_classify {
+    padding-top: 45px;
+    padding-bottom: 25px;
+    background: #f6f6f6;
+}
+.classify-title > h3 {
+    font-size: 20px;
+    color:#2f333e;
+    /*font-weight: bolder;*/
+}
+.classify-content{
+    padding-top: 35px;
+}
+.classify-content .row > div{
+    /*max-width: 220px;*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.classify-content .row > div .one-content{
+    background: #fff;
+}
+.classify-content .row > div .one-content > img{
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.classify-content .row > div .one-content > h4{
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: normal;
+}
+.classify-content .row > div .one-content > p{
+    font-size: 16px;
+    color: #999999;
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 767px){
+    #service_classify {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    #service_classify .classify-title h3{
+        margin: 0;
+    }
+    .classify-content {
+        padding-top: 10px;
+    }
+    .classify-content .row > div {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+/**
+* introduce区域
+*/
+#service_introduce{
+    background: #f6f6f6;
+    padding-bottom: 65px;
+}
+.introduce-title > h3{
+    font-size: 20px;
+    color:#2f333e;
+}
+.introduce-content{
+    padding-top: 50px;
+}
+.introduce-content > .introduce-article {
+    background: #fff;
+    padding: 80px 20px;
+}
+.introduce-content > .introduce-article >p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 29px;
+    color:#666666;
+}
+.fb-tw-plug {
+    padding-top: 30px;
+}
+.fb-tw-plug .row > div > div{
+    background: #fff;
+    padding-top: 20px;
+}
+.fb-tw-plug .row > div > div.twitter{
+    padding-top: 15px;
+}
+@media screen and (max-width: 992px){
+    .fb-tw-plug .col-md-6{
+       padding-bottom: 20px;
+    }
+}
+@media screen and (max-width: 767px){
+    #service_introduce {
+        padding-bottom: 10px;
+    }
+    .introduce-title h3{
+        margin-top: 0;
+    }
+    .introduce-content {
+        padding-top: 10px;
+    }
+}
+/**
+* tab选项卡区域
+*/
+#compare_tabs {
+    background: #f6f6f6;
+    padding-bottom: 20px;
+}
+.tabs-title {
+    text-align: center;
+}
+.tabs-title > ul{
+    display: inline-block;
+    border-bottom: none;
+}
+.tabs-title > ul li a{
+    font-size: 20px;
+    color: #2f333e;
+}
+.tabs-title > ul li > a{
+    margin-right: 0;
+}
+.tabs-title > ul li:nth-of-type(2):before{
+    content: '|';
+    float: left;
+    color:#d9d9d9;
+    line-height: 45px;
+    display: inline-block;
+    font-size: 20px;
+}
+.tabs-title > ul li:nth-of-type(2) > a{
+    padding-left: 17px;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color:transparent;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li > a, .nav-tabs > li.active > a:focus {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-bottom-color: transparent;
+    color: #f9d600;
+}
+.nav-tabs > li.active > a{
+    color: #f9d600;
+}
+.tab-content {
+    padding-top: 65px;
+}
+.tab-content .media > .media-left{
+    padding-right: 19px;
+}
+.tab-content .media > .media-body{
+    padding-top:15px;
+    padding-right: 16px;
+}
+.tab-content .media > .media-body h4{
+    font-size: 14px;
+    color:#2f333e;
+    font-weight: bold;
+}
+.tab-content .media > .media-body span{
+    font-size: 14px;
+    color:#999999;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.tab-content .media > .media-body p{
+    font-size: 14px;
+    color:#666666;
+    /*line-height: 18px;*/
+}
+.tab-content .row > div{
+    margin-bottom: 45px;
+}
+@media screen and (max-width: 1200px){
+    .tabs-title > ul li a {
+        font-size: 18px;
+        padding: 10px 12px;
+    }
+}
+@media screen and (max-width: 767px){
+    #compare_tabs .row ul.nav {
+        padding-left: 0;
+    }
+    .nav-tabs > li {
+        float: none;
+    }
+    .tabs-title > ul li:nth-of-type(1) a {
+        border-bottom: 2px solid #d9d9d9!important;
+        border-right: none!important;
+    }
+    .tab-content {
+        padding-top: 25px;
+    }
+    .media-left, .media-right{
+        display: block;
+    }
+    .tab-content .media > .media-left {
+        padding-right: 0;
+    }
+    .tab-content .media > .media-left img{
+        margin: 0 auto;
+    }
+    .tab-content .media > .media-body {
+        padding: 15px;
+    }
+    .tab-content .row > div {
+        margin-bottom: 20px;
+    }
+    #compare_tabs {
+        padding-bottom: 5px;
+    }
+}
