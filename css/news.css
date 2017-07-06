@@ -46,7 +46,7 @@
     max-width: 750px;
     padding-top: 15px;
 }
-.news-detail .detail-content > ul li .thumb-article h4{
+.news-detail .detail-content > ul li .thumb-article h2{
     font-size: 16px;
     color:#2f333e;
     font-weight: bold;

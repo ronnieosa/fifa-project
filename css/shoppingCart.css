@@ -231,7 +231,7 @@ fieldset[disabled] .btn-check.focus {
     padding-left: 0;
     padding-right: 20px;
 }
-em.red {
+span.red {
     color: #fe1818;
 }
 @media screen and (max-width: 1200px){
@@ -376,6 +376,62 @@ em.red {
     /*top: 50%;*/
     /*width: 0;*/
 /*}*/
+.player-info .player-content > .row ul li .player-search {
+    float: left;
+    position: relative;
+}
+.player-info .player-content > .row ul li .player-search input{
+    width: 383px;
+    height: 40px;
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    padding: 6px 10px;
+    color: #666666;
+    font-size: 14px;
+}
+.player-info .player-content > .row ul li .player-search .player-modal{
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    border-top: 0;
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    display: none;
+    height: 267px;
+    overflow-y: auto;
+}
+.player-info .player-content > .row ul li .player-search .player-modal .list-title{
+    height: 25px;
+    line-height: 25px;
+    background: #f6f6f6;
+    color:#333;
+    border-bottom: 1px solid #e2e2e2;
+    padding: 0 10px;
+}
+.player-info .player-content > .row ul li .player-search .player-modal .list-title > span:nth-of-type(1){
+    display: inline-block;
+    margin-left: 53px;
+}
+.player-info .player-content > .row ul li .player-search .player-modal li{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #666666;
+    font-size: 14px;
+    padding-bottom: 0;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid #f9f9f9;
+    background: #fff;
+}
+.player-info .player-content > .row ul li .player-search .player-modal li:hover{
+    background: #ffc126;
+}
+.player-info .player-content > .row ul li .player-search .player-modal li > img{
+    width: 37px!important;
+    margin-right: 10px;
+}
 .player-info .player-content > .row ul li > em {
     display: inline-block;
     width: 383px;
@@ -460,7 +516,7 @@ input.bg {
     .player-info .player-content > .row ul li > p {
         margin-right: 15px;
     }
-    .player-info .player-content > .row ul li .bootstrap-select {
+    .player-info .player-content > .row ul li .player-search input {
         width: 300px;
     }
     .player-info .player-content > .row ul li > em {
@@ -489,7 +545,7 @@ input.bg {
     .player-info .player-content > .row ul li > p {
         margin-right: 25px;
     }
-    .player-info .player-content > .row ul li .bootstrap-select {
+    .player-info .player-content > .row ul li .player-search input {
         width: 383px;
     }
     .player-info .player-content > .row ul li > em {
@@ -526,7 +582,7 @@ input.bg {
         margin-right: 0;
         text-align: left;
     }
-    .player-info .player-content > .row ul li .bootstrap-select {
+    .player-info .player-content > .row ul li .player-search input {
         width: 250px;
     }
     .player-info .player-content > .row ul li > em {

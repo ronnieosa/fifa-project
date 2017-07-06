@@ -5,7 +5,12 @@
 
 'use strict';
 
-$(function() {
-
-
+$(function(){
+   // 菜单栏激活状态切换
+    $('.platform li a ').on('click',function(){
+        $(this).addClass('active').parent().siblings('li').children().removeClass('active');
+    });
+    $('.method li a ').on('click',function(){
+        $(this).addClass('active').parent().siblings('li').children().removeClass('active');
+    })
 });

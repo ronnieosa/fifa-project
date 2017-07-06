@@ -158,32 +158,27 @@ fieldset[disabled] .btn-command.focus {
 .device-list > li:first-of-type{
     padding-bottom: 20px;
 }
-.device-list > li > i{
-    float:left;
-    width: 235px;
+.device-list > li i{
+    float:right;
+    /*width: 235px;*/
     text-align: right;
-    padding-right: 23px;
     font-size: 15px;
     font-weight: bold;
     color: #2f333e;
     line-height: 34px;
 }
-.device-list > li > ul{
-    float:left;
-}
-.device-list > li > ul > li{
+.device-list > li ul > li{
     float:left;
     margin: 0 10px;
+    padding-bottom: 10px;
 }
-.device-list > li > ul > li:nth-of-type(1){
-    margin-left: 0;
+.device-list > li .row > div:nth-of-type(2){
+    padding-left: 0;
 }
-@media screen and (max-width: 1200px){
-    .device-list > li > i {
-        width: 215px;
-    }
-    .device-list > li > ul > li {
-        margin: 0 5px;
+
+@media screen and (max-width: 992px){
+    .device-list > li i {
+       float: left;
     }
 }
 @media screen and (max-width: 767px){
@@ -198,6 +193,9 @@ fieldset[disabled] .btn-command.focus {
         width: auto;
         text-align: left;
         padding-right: 0;
+    }
+    .btn-device {
+        padding: 5px 22px;
     }
     .device-list > li > ul > li {
         margin: 5px;
@@ -325,11 +323,24 @@ fieldset[disabled] .btn-command.focus {
     width: 104px;
     padding: 6px 5px;
 }
+@media screen and (max-width: 1200px){
+    .amount-list > ul > li + li .row > div span {
+        font-size: 13px;
+    }
+}
 @media screen and (max-width: 992px){
     .amount-list > ul > li + li {
         padding: 7px 50px;
     }
+    .amount-list > ul > li + li .row > div:nth-of-type(1) > span {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: inline-block;
+        width:210px;
+    }
 }
+
 @media screen and (max-width: 767px){
     .amount-list {
         margin-top: 25px;
@@ -352,6 +363,25 @@ fieldset[disabled] .btn-command.focus {
     }
     .amount-list > ul > li:nth-of-type(1) .row > div:nth-of-type(1){
         text-align: center;
+    }
+    .amount-list > ul > li + li .row > div span {
+        font-size: 13px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: inline-block;
+        width:280px;
+    }
+    .amount-list > ul > li + li .row > div:nth-of-type(1) > span {
+        width:280px;
+    }
+}
+@media screen and (max-width: 320px){
+    .amount-list > ul > li + li .row > div span {
+        width:200px;
+    }
+    .amount-list > ul > li + li .row > div:nth-of-type(1) > span {
+        width:200px;
     }
 }
 /**

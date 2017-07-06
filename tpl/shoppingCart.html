@@ -212,7 +212,7 @@
                             <th>Total Price</th>
                             <th>Remove</th>
                         </tr>
-                        <tr>
+                        <tr class="model" data-id="1" data-price="100" data-num="1" data-money="315">
                             <td>FIFA18 PS4 Coins 10K</td>
                             <td>USD <em>315.00</em></td>
                             <td class="setCount text-center">
@@ -227,7 +227,7 @@
                                 <span class="del"><img src="../img/remove.jpg" alt=""></span>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="model" data-id="2" data-price="100" data-num="1" data-money="315">
                             <td>FIFA18 PS4 Coins 10K</td>
                             <td>USD <em>315.00</em></td>
                             <td class="setCount text-center">
@@ -241,27 +241,18 @@
                             <td class="remcommand">
                                 <span class="del"><img src="../img/remove.jpg" alt=""></span>
                             </td>
-                        </tr>
-                        <tr class="bg">
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td class="command">Sub-Total:  USD <em>299.25</em></td>
-                        </tr>
-                        <tr class="bg">
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td class="command">Member Discount:  USD <em>299.25</em></td>
                         </tr>
                         <tr class="light">
                             <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td class="command">Final Price: <em class="red">USD 299.25</em></td>
+                            <td class="command">Final Price:
+                                <span class="red">
+                                    <em id="mark">$</em>
+                                    <span class="total">730</span>
+                                </span>
+                            </td>
                         </tr>
                         </tbody>
                     </table>
@@ -278,29 +269,90 @@
                         <div class="row">
                             <div class="col-md-7">
                                 <ul class="playerInfo-list">
-                                    <li>
+                                    <li class="clearfix">
                                         <p><em class="red">*</em>Player Name：</p>
-                                        <select class="selectpicker" data-live-search="true" data-size="5" title="please choise the player">
-                                            <option></option>
-                                            <option>Casillas</option>
-                                            <option>Reyna</option>
-                                            <option>Diego - Lopez</option>
-                                            <option>Albiol</option>
-                                            <option>Ramos</option>
-                                            <option>Arbeloa</option>
-                                            <option>Capdevila</option>
-                                            <option>Peak</option>
-                                            <option>Puyol</option>
-                                            <option>Marchena</option>
-                                        </select>
+                                        <div class="player-search">
+                                            <input type="text" class="searchInput" placeholder="Please enter the playerName">
+                                            <div class="player-modal">
+                                                <div class="list-title">
+                                                    <span>PlayerName</span>
+                                                    <span class="pull-right">Rating</span>
+                                                </div>
+                                                <ul>
+                                                    <li>
+                                                        <img src="../img/ceshi.png" alt="">
+                                                        <span> Eden Hazard</span>
+                                                        <span class="pull-right">94</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="../img/ceshi.png" alt="">
+                                                        <span> Eden Hazard2</span>
+                                                        <span class="pull-right">12</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="../img/ceshi.png" alt="">
+                                                        <span> Eden Hazard3</span>
+                                                        <span class="pull-right">11</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="../img/ceshi.png" alt="">
+                                                        <span> Eden Hazard3</span>
+                                                        <span class="pull-right">11</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="../img/ceshi.png" alt="">
+                                                        <span> Eden Hazard3</span>
+                                                        <span class="pull-right">11</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="../img/ceshi.png" alt="">
+                                                        <span> Eden Hazard3</span>
+                                                        <span class="pull-right">11</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="../img/ceshi.png" alt="">
+                                                        <span> Eden Hazard3</span>
+                                                        <span class="pull-right">11</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="../img/ceshi.png" alt="">
+                                                        <span> Eden Hazard3</span>
+                                                        <span class="pull-right">11</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="../img/ceshi.png" alt="">
+                                                        <span> Eden Hazard3</span>
+                                                        <span class="pull-right">11</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="../img/ceshi.png" alt="">
+                                                        <span> Eden Hazard3</span>
+                                                        <span class="pull-right">11</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!--<select class="selectpicker" data-live-search="true" data-size="5" title="please choise the player">-->
+                                            <!--<option></option>-->
+                                            <!--<option>Casillas</option>-->
+                                            <!--<option>Reyna</option>-->
+                                            <!--<option>Diego - Lopez</option>-->
+                                            <!--<option>Albiol</option>-->
+                                            <!--<option>Ramos</option>-->
+                                            <!--<option>Arbeloa</option>-->
+                                            <!--<option>Capdevila</option>-->
+                                            <!--<option>Peak</option>-->
+                                            <!--<option>Puyol</option>-->
+                                            <!--<option>Marchena</option>-->
+                                        <!--</select>-->
                                     </li>
                                     <li>
                                         <p><em class="red">*</em>Start Price：</p>
-                                        <input type="text">
+                                        <input type="text" class="stap" value="">
                                     </li>
                                     <li>
                                         <p><em class="red">*</em>Buy Now Price：</p>
-                                        <input type="text" value="10 k" class="bg" disabled="disabled">
+                                        <input type="text" value="" class="buyp">
                                     </li>
                                     <li>
                                         <p><em class="red">*</em>Time Remaining：</p>
@@ -309,9 +361,9 @@
                                     <li>
                                         <p><em class="red">*</em>Quantity of listed players：</p>
                                         <em>
-                                            <button class="reduce" type="button">-</button>
-                                            <input type="text" value="1">
-                                            <button class="add" type="button">+</button>
+                                            <button class="p-reduce" type="button">-</button>
+                                            <input class="p-count" type="text" value="1">
+                                            <button class="p-add" type="button">+</button>
                                         </em>
                                     </li>
                                 </ul>
@@ -339,11 +391,12 @@
                 <div class="personal-content">
                     <h3>Personal Information</h3>
                     <div class="row">
-                        <div class="col-md-7">
+                        <div class="col-md-10">
                             <ul class="personalInfo-list">
                                 <li>
                                     <p><em class="red">*</em>E-mail  Address：</p>
-                                    <input type="text">
+                                    <input type="text" id="email">
+                                    <span class="reminder"></span>
                                 </li>
                                 <li>
                                     <p>Telephone Number：</p>
@@ -399,7 +452,7 @@
     </div>
     <div class="checkOut">
         <div class="container text-center">
-            <a href="#" class="btn btn-check">Check Out</a>
+            <button type="button" class="btn btn-check" id="check">Check Out</button>
         </div>
     </div>
 </section>
@@ -519,16 +572,18 @@
                             Subscribe to our weekly <br>shameless plug!
                         </p>
                     </li>
-                    <li class="email-input">
-                        <span class="all">*</span>
-                        <input type="text" placeholder="Email">
-                    </li>
-                    <li class="email-input">
-                        <input type="text" placeholder="Full Name">
-                    </li>
-                    <li class="email-input">
-                        <button class="btn btn-sub">Subscribe</button>
-                    </li>
+                    <form action="">
+                        <li class="email-input">
+                            <span class="all">*</span>
+                            <input type="text" placeholder="Email">
+                        </li>
+                        <li class="email-input">
+                            <input type="text" placeholder="Full Name">
+                        </li>
+                        <li class="email-input">
+                            <button class="btn btn-sub">Subscribe</button>
+                        </li>
+                    </form>
                 </ul>
                 <ul>
                     <li class="headtitle">

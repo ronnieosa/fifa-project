@@ -273,9 +273,11 @@ fieldset[disabled] .btn-check.focus {
     line-height: 32px;
     background: #f7f7f7;
 }
-#top_column > .container > p{
+#top_column > .container > h1{
     font-size: 13px;
     color:#333333;
+    margin:0;
+    line-height: inherit;
 }
 #top_column > .container > ul > li .js-language-select {
 
@@ -582,7 +584,7 @@ footer #foot-bottom ul{
     float: left;
     padding: 0 12px
 }
-footer #foot-bottom ul > li{
+footer #foot-bottom ul li{
     padding: 9px 0;
     margin: 0 23px;
 }
@@ -614,18 +616,18 @@ footer #foot-bottom ul > li > p {
     font-size: 14px;
     color:#999999;
 }
-footer #foot-bottom ul > li.email-input{
+footer #foot-bottom ul li.email-input{
     padding: 5px 0;
     position: relative;
     padding-left: 10px;
 }
-footer #foot-bottom ul > li.email-input >span.all{
+footer #foot-bottom ul li.email-input >span.all{
     color: #cc0000;
     position: absolute;
     top: 10px;
     left: 0;
 }
-footer #foot-bottom ul > li.email-input input{
+footer #foot-bottom ul li.email-input input{
     color: #999999;
     height: 27px;
     border: 1px solid #313131;
